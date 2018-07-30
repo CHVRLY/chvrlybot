@@ -6,7 +6,7 @@ const PREFIX = "!c";
 function heure()
 {
      var date = new Date();
-     var heure = date.getHours();
+     var heure = (date.getHours() + 2);
      var minutes = date.getMinutes();
      if(minutes < 10)
           minutes = "0" + minutes;
