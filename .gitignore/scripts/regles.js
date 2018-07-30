@@ -27,4 +27,4 @@ clientDiscord.on('message', message => {
         }
 });
 
-clientDiscord.login("process.env.TOKEN");
+clientDiscord.login(process.env.TOKEN);
