@@ -1,4 +1,4 @@
-// INCLUDES
+// DEPENDANCES
 const Discord = require('discord.js');
 const config = require('./scripts/config.json');
 const scripts = require('./scripts/scripts.js');
