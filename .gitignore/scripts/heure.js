@@ -19,4 +19,4 @@ clientDiscord.on('message', message => {
         }
 });
 
-clientDiscord.login("NDcyNzM4NjAyOTUwOTgzNjkw.DkB1hg.OzCIvCm_X8Jk6evD6GlF6FcYhOE");
+clientDiscord.login(process.env.TOKEN);
