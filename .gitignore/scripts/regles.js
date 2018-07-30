@@ -11,7 +11,7 @@ clientDiscord.on('message', message => {
             .setColor(3447003)
             .setDescription(
 `
-**Les règles ci-dessous sont à respecter obligatoirement :**
+__Les règles ci-dessous sont à respecter obligatoirement :__
 
 **1.** Soyez respecteux avec les autres membres du discord.
 
