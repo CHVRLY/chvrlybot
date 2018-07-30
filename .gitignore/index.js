@@ -39,11 +39,11 @@ clientDiscord.on('message', message => {
                 .setDescription(
 `
 
-**Commandes Principales :**
+__Commandes Principales :__
 
 **!c regles** -> Affiche le réglement
 
-**Commandes Secondaires :**
+__Commandes Secondaires :__
 
 **!c heure** -> Affiche l'heure
 **!c info** -> Affiche les informations du bot
