@@ -42,12 +42,14 @@ clientDiscord.on('message', message => {
 
 __Commandes Principales :__
 
-**!c regles** -> Affiche le réglement
+**!c regles** -> Affiche le réglement.
+**!c météo [ville]** -> Affiche la météo en direct.
 
 __Commandes Secondaires :__
 
-**!c heure** -> Affiche l'heure
-**!c info** -> Affiche les informations du bot
+**!c heure** -> Affiche l'heure.
+**!c info** -> Affiche les informations du bot.
+**!c clear** -> Nettoie le salon (admin).
 
 `)
                 
