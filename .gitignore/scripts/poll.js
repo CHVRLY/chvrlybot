@@ -5,7 +5,7 @@ const PREFIX = "!c";
 
 clientDiscord.on('message', message => {
 
-    //if (message.content.startsWith(PREFIX + " sondage")) {
+    if (message.content.startsWith(PREFIX + " sondage")) {
         //if (!message.member.roles.find(r => r.name === 'Le Patron'))
         //return message.channel.send("**Cette commande n'est utilisable que par un administrateur !**");
         
