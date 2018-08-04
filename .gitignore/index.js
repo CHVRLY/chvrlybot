@@ -44,6 +44,7 @@ __Commandes Principales :__
 
 **!c regles** -> Affiche le réglement.
 **!c météo [ville]** -> Affiche la météo en direct.
+**!c sondage <question>** -> Poste un sondage.
 
 __Commandes Secondaires :__
 
