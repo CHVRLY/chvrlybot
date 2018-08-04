@@ -1,5 +1,6 @@
 // DEPENDANCES
 const Discord = require('discord.js');
+const weather = require('weather-js');
 const config = require('./scripts/config.json');
 const scripts = require('./scripts/scripts.js');
 require('events').EventEmitter.prototype._maxListeners = 1000;
