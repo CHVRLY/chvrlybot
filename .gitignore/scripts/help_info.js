@@ -37,7 +37,8 @@ __Commandes Principales :__
 __Commandes Secondaires :__
 
 **!c heure** -> Affiche l'heure.
-**!c info** -> Affiche les informations du bot.
+**!c info** -> Affiche les informations du discord.
+**!c bot** -> Affiche les informations du bot.
 
 `)
                 
@@ -49,7 +50,7 @@ __Commandes Secondaires :__
 // !c info
 
 clientDiscord.on('message', message => {
-    if(message.content.startsWith(PREFIX + " info")) {
+    if(message.content.startsWith(PREFIX + " bot")) {
             const embed = new Discord.RichEmbed();
             embed.setTitle('Fiche technique:')
             .setAuthor('Informations de ChvrlyBot', clientDiscord.user.avatarURL)
