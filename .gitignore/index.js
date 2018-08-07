@@ -45,6 +45,7 @@ __Commandes Principales :__
 **!c regles** -> Affiche le réglement.
 **!c météo [ville]** -> Affiche la météo en direct.
 **!c sondage <question>** -> Poste un sondage.
+**!c mas** -> Lance la machine à sous.
 
 __Commandes Secondaires :__
 
