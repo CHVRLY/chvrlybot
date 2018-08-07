@@ -6,3 +6,4 @@ const weather = require("./weather.js");
 const poll = require("./poll.js");
 const slot = require("./slot.js");
 const help_info = require("./help_info.js");
+const serverinfo = require("./serverinfo.js");
