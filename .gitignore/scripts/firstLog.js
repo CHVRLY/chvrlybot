@@ -7,6 +7,10 @@ clientDiscord.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "Membres");
     member.guild.channels.find("name", "📢-accueil").send(` **${member.user.username}** viens de rejoindre le discord! :tada:`)
     member.addRole(role)
+});
+
+clientDiscord.on("guildMemberRemove", member => {
+    member.guild.channels.find("name", "📢-accueil").send(` **${member.user.username}** viens de quitter le discord! :door:`)
 })
 
 clientDiscord.login(process.env.TOKEN);
