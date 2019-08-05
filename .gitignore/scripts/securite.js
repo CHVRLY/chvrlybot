@@ -7,7 +7,7 @@ clientDiscord.on('message', function(message) {
     if (message.content.startsWith(PREFIX + " sécurité")) {
 
         if (!message.member.hasPermission("MANAGE_MESSAGES")) {
-            message.reply("**Tu es qui pour demander l'aide de la sécurité toi ?!**");
+            message.reply("**Tu es qui pour demander l'aide de la sécurité toi ?! :cop:**");
         }
 
         if (message.member.hasPermission("MANAGE_MESSAGES")) {
