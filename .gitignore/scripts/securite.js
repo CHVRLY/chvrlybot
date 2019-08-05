@@ -11,7 +11,7 @@ clientDiscord.on('message', function(message) {
         }
 
         if (message.member.hasPermission("MANAGE_MESSAGES")) {
-            message.channel.send("**Je vous ordonne de laisser Charly tranquille! Ne m'obligez pas à faire usage de la force ! :cop:**")
+            message.channel.send("**Je vous ordonne de laisser Charly tranquille! Ne m'obligez pas à faire usage de la force! :cop:**")
                 
         }
     }
