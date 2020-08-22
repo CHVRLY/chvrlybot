@@ -12,7 +12,7 @@ clientDiscord.on('message', message => {
         let args = message.content.split(" ").slice(1);
         let question = args.join(" ")
         var embed = new Discord.RichEmbed()
-            .setTitle(`__${message.author.username} a lancé un nouveau sondage :__`)
+            .setTitle(`📊   SONDAGE   📊`)
             .setDescription( " **" + question + "** " )
             .setFooter('Ajoute une réaction pour voter.')
             .setColor("0xB40404")
@@ -25,5 +25,7 @@ clientDiscord.on('message', message => {
         });
     }
 });
+
+//${message.author.username}
 
 clientDiscord.login(process.env.TOKEN);
