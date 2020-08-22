@@ -14,7 +14,7 @@ const PREFIX = ".";
 
 clientDiscord.on('ready', () => {
     console.log("> initialisation du bot : OK!");
-    clientDiscord.user.setActivity('. help');
+    clientDiscord.user.setActivity('surveiller le serveur');
 });
 
 
