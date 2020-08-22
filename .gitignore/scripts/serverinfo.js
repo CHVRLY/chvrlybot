@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
-const PREFIX = "!c";
+const PREFIX = ".";
 clientDiscord.login(process.env.TOKEN);
 
 //
 
 clientDiscord.on('message', message => {
 
-if (message.content.startsWith(PREFIX + " info")) {
+if (message.content.startsWith(PREFIX + "info")) {
 
     const embed = new Discord.RichEmbed();
             embed.setTitle(' ')
