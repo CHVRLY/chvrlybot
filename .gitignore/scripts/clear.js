@@ -4,7 +4,7 @@ const config = require('./config.json');
 const PREFIX = ".";
 
 clientDiscord.on('message', function(message) {
-    if (message.content.startsWith(PREFIX + " clear")) {
+    if (message.content.startsWith(PREFIX + "clear")) {
 
         if (!message.member.hasPermission("MANAGE_MESSAGES")) {
             message.reply("**Et non... tu n'as pas les permissions requises !**");
