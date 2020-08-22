@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
 const weather = require('weather-js');
-const PREFIX = "!c";
+const PREFIX = ".";
  
 
 clientDiscord.on('message', message => {
@@ -10,7 +10,7 @@ clientDiscord.on('message', message => {
     let cont = message.content.slice(PREFIX.length).split(" ");
     let args = cont.slice(2);
 
-    if (message.content.startsWith(PREFIX + ' meteo') || message.content.startsWith(PREFIX + ' météo'))  {
+    if (message.content.startsWith(PREFIX + 'meteo') || message.content.startsWith(PREFIX + 'météo'))  {
 
         weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
             //if (err) message.channel.send(err);
