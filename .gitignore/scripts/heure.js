@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
-const PREFIX = "!c";
+const PREFIX = ".";
 
 function heure()
 {
@@ -14,7 +14,7 @@ function heure()
 };
 
 clientDiscord.on('message', message => {
-    if (message.content.startsWith(PREFIX + " heure")) {
+    if (message.content.startsWith(PREFIX + "heure")) {
             message.channel.send("Si j'en crois ma montre, il est actuellement **" + heure() + "** :clock1:");
         }
 });
