@@ -8,7 +8,7 @@ clientDiscord.login(process.env.TOKEN);
 
 clientDiscord.on('message', message => {
 
-if (message.content.startsWith(PREFIX + "info")) {
+if (message.content.startsWith(PREFIX + " info")) {
 
     const embed = new Discord.RichEmbed();
             embed.setTitle(' ')
