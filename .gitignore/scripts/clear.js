@@ -1,20 +1,20 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
-const PREFIX = "!c";
+const PREFIX = ".";
 
 clientDiscord.on('message', function(message) {
     if (message.content.startsWith(PREFIX + " clear")) {
 
         if (!message.member.hasPermission("MANAGE_MESSAGES")) {
-            message.reply("**Tu te prends pour qui ? Seul mon maître Charly a le droit de me commander !**");
+            message.reply("**Et non... tu n'as pas les permissions requises !**");
         }
         
         if (message.member.hasPermission("MANAGE_MESSAGES")) {
             message.channel.fetchMessages()
                .then(function(list){
                     message.channel.bulkDelete(list);
-                    message.channel.send("**Sous le commandement de mon maître vénéré Charly viens de nétoyer le salon, c'est tout propre!**")
+                    message.channel.send("**Le tchat a été nettoyé!**")
                 }, function(err){message.channel.send("Une erreur est survenue!")})
         }
     }
