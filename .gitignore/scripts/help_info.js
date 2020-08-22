@@ -29,7 +29,6 @@ clientDiscord.on('message', message => {
 
 __Commandes Principales :__
 
-**.regles** -> Affiche le réglement.
 **.météo <ville>** -> Affiche la météo en direct.
 **.sondage <question>** -> Poste un sondage.
 
