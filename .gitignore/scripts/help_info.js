@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
-const PREFIX = "!c";
+const PREFIX = ".";
 
 // !c help
 
 clientDiscord.on('message', message => {
-    if(message.content.startsWith(PREFIX + " help")) {
+    if(message.content.startsWith(PREFIX + "help")) {
             const embed = new Discord.RichEmbed();
             embed.setTitle(' ')
-            .setAuthor('Chez Chvrly', clientDiscord.user.avatarURL)
+            .setAuthor('RedRoom', clientDiscord.user.avatarURL)
             .setColor(3447003)
             .setDescription(
 `
@@ -29,16 +29,15 @@ clientDiscord.on('message', message => {
 
 __Commandes Principales :__
 
-**!c regles** -> Affiche le réglement.
-**!c météo <ville>** -> Affiche la météo en direct.
-**!c sondage <question>** -> Poste un sondage.
-**!c mas** -> Lance la machine à sous.
+**.regles** -> Affiche le réglement.
+**.météo <ville>** -> Affiche la météo en direct.
+**.sondage <question>** -> Poste un sondage.
 
 __Commandes Secondaires :__
 
-**!c heure** -> Affiche l'heure.
-**!c info** -> Affiche les informations du discord.
-**!c bot** -> Affiche les informations du bot.
+**.heure** -> Affiche l'heure.
+**.info** -> Affiche les informations du discord.
+**.bot** -> Affiche les informations du bot.
 
 `)
                 
@@ -50,10 +49,10 @@ __Commandes Secondaires :__
 // !c info
 
 clientDiscord.on('message', message => {
-    if(message.content.startsWith(PREFIX + " bot")) {
+    if(message.content.startsWith(PREFIX + "bot")) {
             const embed = new Discord.RichEmbed();
             embed.setTitle('Fiche technique:')
-            .setAuthor('Informations de ChvrlyBot', clientDiscord.user.avatarURL)
+            .setAuthor('Informations de RedRoomBot', clientDiscord.user.avatarURL)
             .setColor(3447003)
             .setDescription(
 `
