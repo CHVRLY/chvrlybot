@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
-const PREFIX = "!c";
+const PREFIX = ".";
 
 clientDiscord.on('message', message => {
 
-    if (message.content.startsWith(PREFIX + " sondage")) {
+    if (message.content.startsWith(PREFIX + "sondage")) {
         //if (!message.member.roles.find(r => r.name === 'Le Patron'))
         //return message.channel.send("**Cette commande n'est utilisable que par un administrateur !**");
         
