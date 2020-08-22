@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 const config = require('./config.json');
-const PREFIX = "!c";
+const PREFIX = ".";
 
 clientDiscord.on('message', function(message) {
-    if (message.content.startsWith(PREFIX + " sécurité")) {
+    if (message.content.startsWith(PREFIX + "sécurité")) {
 
         if (!message.member.hasPermission("MANAGE_MESSAGES")) {
             message.reply("**Tu es qui pour demander l'aide de la sécurité toi ?! :cop:**");
